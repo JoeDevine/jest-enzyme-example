@@ -1,7 +1,7 @@
 {
-  "name": "jest-jasmine-reporters-example",
+  "name": "jest-enzyme-example",
   "version": "1.0.0",
-  "description": "Example project demonstrating how to implement jasmine-reporters with Jest",
+  "description": "Example project using enzyme with Jest",
   "main": "server.js",
   "scripts": {
     "prestart": "npm run test",
