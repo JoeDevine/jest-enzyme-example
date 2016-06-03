@@ -1,6 +1,6 @@
-# Jest with Jasmine Reporters Example
+# Jest with Enzyme Example
 
-> This is an example project built to demonstrate how to implement Jasmine Reporters with Jest.
+> This is an example project built to demonstrate using enzyme from [Airbnb](https://github.com/airbnb) with Jest.
 
 ## Usage
 
@@ -15,18 +15,17 @@ The start script has a corresponding `prestart` script which will test and compi
 
 ## Jest Config
 
-One of the powerful feature of Jest is that it automatically mocks dependencies as default. However, this means that we need to make sure we unmock the required modules in order to be able to export test results succesfully using jasmine reporters. 
+One of the powerful feature of Jest is that it automatically mocks dependencies as default. However, this means that we need to make sure we unmock enzyme in order to be able to use it successfully.
 With this in mind, below is the Jest config required in `package.json`:
 
 ```
 
 "jest": {
-            "collectCoverage": true,
-            "setupTestFrameworkScriptFile": "./setup-jasmine-env.js",
+            ...
+
             "unmockedModulePathPatterns": [
                "./node_modules/react",
-               "./node_modules/react-addons-test-utils",
-               "./node_modules/jasmine-reporters"
+               "./node_modules/enzyme"
              ]
          }
     
