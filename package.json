@@ -29,6 +29,7 @@
   },
   "jest": {
     "collectCoverage": true,
+    "setupTestFrameworkScriptFile": "./setup-jasmine-env.js",
     "collectCoverageOnlyFrom": {
       "./client/components/content.js": true
     },
