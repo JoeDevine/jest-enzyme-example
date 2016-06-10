@@ -1,5 +1,7 @@
 # Jest with Enzyme Example
 
+[![Build Status](https://travis-ci.org/JoeDevine/jest-enzyme-example.svg?branch=master)](https://travis-ci.org/JoeDevine/jest-enzyme-example)
+
 > This is an example project built to demonstrate using enzyme from [Airbnb](https://github.com/airbnb) with Jest.
 
 ## Usage
