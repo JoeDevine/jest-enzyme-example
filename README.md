@@ -52,6 +52,7 @@ Overview
 ├── .gitignore               # Defines which files should not be backed up to git
 ├── package.json             # Contains the list of 3rd party libraries and utilities used, as well as all npm scripts to run the project
 ├── server.js                # Node server config file
-└── setup-jasmine-env.js     # Jasmine Reporters config file
+├── setup-jasmine-env.js     # Jasmine Reporters config file
+└── test-results.xml         # Code coverage report generated for CI
 ```
 
