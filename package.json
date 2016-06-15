@@ -9,7 +9,7 @@
     "jscs": "jscs ./client --preset=airbnb",
     "lint": "eslint ./client",
     "compile": "browserify -t [ babelify --presets [ react ] ] client/main.js -o client/compiled.js",
-    "pretest": "npm run lint && npm run jscs",
+    "pretest": "snyk test && npm run lint && npm run jscs",
     "test": "jest --coverage",
     "posttest": "npm run compile"
   },
@@ -25,7 +25,8 @@
     "babelify": "^7.3.0",
     "express": "^4.13.4",
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "snyk": "^1.14.3"
   },
   "jest": {
     "collectCoverage": true,
